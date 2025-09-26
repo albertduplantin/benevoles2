@@ -1,12 +1,14 @@
 {
-<<<<<<< HEAD
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "regions": ["cdg1"],
   "functions": {
     "src/app/api/**/*.ts": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs18.x",
+      "maxDuration": 30
     }
   },
   "env": {
@@ -19,16 +21,3 @@
     "NEXT_PUBLIC_BASE_URL": "@base_url"
   }
 }
-=======
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "framework": "nextjs",
-  "installCommand": "npm install",
-  "regions": ["cdg1"],
-  "functions": {
-    "src/app/api/*/route.ts": {
-      "maxDuration": 30
-    }
-  }
-} 
->>>>>>> f04bd292517aef758b35a542c8acbf0c58acef3e
